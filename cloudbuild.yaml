@@ -16,7 +16,7 @@
 steps:
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/msds434finalproject/github_jonxsong_msds434_final_project/myimage', '.']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/msds434finalproject/github_jonxsong_msds434_final_project/myimage', './backend']
 # Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/msds434finalproject/github_jonxsong_msds434_final_project/myimage']
