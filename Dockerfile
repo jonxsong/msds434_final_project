@@ -17,6 +17,8 @@ FROM golang:1.19
 WORKDIR /go/src/invoke
 
 COPY invoke.go .
+RUN go mod init
+
 RUN go install -v
 
 COPY . .
