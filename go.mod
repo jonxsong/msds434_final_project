@@ -1,3 +1,3 @@
-module github.com/GoogleCloudPlatform/cloud-build-samples/golang
+module invoke.go
 
 go 1.19
