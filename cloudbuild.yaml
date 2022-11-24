@@ -15,13 +15,13 @@
 # [START cloudbuild_run_example_builddeploy]
 steps:
 # Build the container image
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'gcr.io/msds434finalproject/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/msds434finalproject/github_jonxsong_msds434_final_project/myimage', '.']
 # Push the container image to Container Registry
-- name: 'gcr.io/cloud-builders/docker'
+- name: 'gcr.io/msds434finalproject/docker'
   args: ['push', 'us-central1-docker.pkg.dev/msds434finalproject/github_jonxsong_msds434_final_project/myimage']
 # Deploy container image to Cloud Run
-- name: 'gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/msds434finalproject/gcloud'
   args: ['run', 'deploy', 'myservice', '--image', 'us-central1-docker.pkg.dev/github_jonxsong_msds434finalproject/msds434_final_project/myimage', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
 images:
 - us-central1-docker.pkg.dev/github_jonxsong_msds434finalproject/github_jonxsong_msds434_final_project/myimage
