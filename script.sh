@@ -14,3 +14,27 @@
 # limitations under the License.
 
 echo Hello ${TARGET:=World}!
+
+gcloud auth application-default login
+
+{
+  "instances": [
+    { "feature_column_a": "value", "feature_column_b": "value", ... },
+    { "feature_column_a": "value", "feature_column_b": "value", ... },
+    ...
+  ]
+}
+
+ENDPOINT_ID="6052925860116168704"
+PROJECT_ID="msds434finalproject"
+INPUT_DATA_FILE="INPUT-JSON"
+
+export PROJECT_ID=msds434finalproject
+export ENDPOINT_ID=census_bureau_acs_endpoint
+
+curl \
+-X POST \
+-H "Authorization: Bearer $(gcloud auth print-access-token)" \
+-H "Content-Type: application/json" \
+https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:predict \
+-d "@${INPUT_DATA_FILE}"
