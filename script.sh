@@ -153,7 +153,7 @@ INPUT_DATA_FILE='{
 "vacant_housing_units_for_rent": 100000,
 "vacant_housing_units_for_sale": 100000,
 "white_including_hispanic": 100000,
-"white_pop": 100000}
+"white_pop": 100000, },
   ]
 }'
 
