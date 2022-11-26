@@ -17,20 +17,22 @@ echo Hello ${TARGET:=World}!
 
 gcloud auth application-default login
 
-{
+ENDPOINT_ID="6052925860116168704"
+PROJECT_ID="msds434finalproject"
+INPUT_DATA_FILE='{
   "instances": [
     { "feature_column_a": "value", "feature_column_b": "value", ... },
     { "feature_column_a": "value", "feature_column_b": "value", ... },
     ...
   ]
-}
+}'
 
-ENDPOINT_ID="6052925860116168704"
-PROJECT_ID="msds434finalproject"
-INPUT_DATA_FILE="INPUT-JSON"
+echo "${ENDPOINT_ID} ${PROJECT_ID} ${INPUT_DATA_FILE}"
 
 export PROJECT_ID=msds434finalproject
 export ENDPOINT_ID=census_bureau_acs_endpoint
+
+echo "${PROJECT_ID} ${ENDPOINT_ID}"
 
 curl \
 -X POST \
@@ -38,3 +40,5 @@ curl \
 -H "Content-Type: application/json" \
 https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:predict \
 -d "@${INPUT_DATA_FILE}"
+
+echo $(ls)
