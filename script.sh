@@ -35,13 +35,14 @@ echo "${PROJECT_ID} ${ENDPOINT_ID}"
 #https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:predict \
 #-d "@${INPUT_DATA_FILE}"
 
-curl \
+export results=$(curl \
 -X GET \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 -H "Content-Type: application/json" \
 https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:explain \
--d "@${INPUT_DATA_FILE}"
+-d "@${INPUT_DATA_FILE}")
 
+echo "${results}"
 #echo https://us-west1-aiplatform.googleapis.com/v1/projects/msds434finalproject/locations/us-west1/endpoints/census_bureau_acs_endpoint:predict
 
 echo $(ls)
