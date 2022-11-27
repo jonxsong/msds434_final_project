@@ -30,3 +30,10 @@ https://cloud.google.com/cloud-build/docs/deploying-builds/deploy-cloud-run
 - Google Source linked with Github
 - Google Console Triggers activated on push to Github, buiild process will start
 - Google Build API activated, app is deployed to Google Cloud Run
+
+# Monitoring Dashboards
+## Cloud Run Dashboard
+![alt text](https://i.imgur.com/d0oQLUf.png)
+
+## Stackdriver Dashboard
+![alt text](https://i.imgur.com/cVQI5xh.png)
