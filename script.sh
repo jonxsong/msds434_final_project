@@ -198,11 +198,11 @@ export datum='{
   "commuters_16_over": null
 }'
 
-export INPUT_DATA='{
-  "instances": [
+export INPUT_DATA="{
+  \"instances\": [
    ${datum}, ${datum}
   ]
-}'
+}"
 
 export INPUT_DATA_FILE_NAME=input_data_file_name.json
 
