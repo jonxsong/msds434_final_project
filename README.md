@@ -5,6 +5,7 @@ For a particular census block, what are predictors of a city for people that gen
 - This code is meant to connect to a vertex-ai regression model endpoint. 
 - It is meant to be run from within a gce cloud run project. 
 - The code was adapted from a fork of an example project published by google cloud.
+- Dataset queried from https://console.cloud.google.com/marketplace/product/united-states-census-bureau/acs?project=msds434finalproject 
 
 # Architecture Diagram
 ![alt text](https://i.imgur.com/QLCQAAz.png)
