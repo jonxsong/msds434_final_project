@@ -8,7 +8,6 @@ For a particular census block, what are predictors of a city for people that gen
 
 # Architecture Diagram
 ![alt text](https://i.imgur.com/4tTdKmw.png)
-https://i.imgur.com/4tTdKmw.png
 
 # run-example-builddeploy
 Code example used in the official Cloud Build documentation
