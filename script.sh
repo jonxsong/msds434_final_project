@@ -43,24 +43,24 @@ echo ${INPUT_DATA} > ${INPUT_DATA_FILE_NAME}
 
 echo "${INPUT_DATA}"
 
-echo $(curl \
+curl \
 -X POST \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 -H "Content-Type: application/json" \
 https://us-west1-aiplatform.googleapis.com/v1beta/projects/${PROJECT_ID}/locations/us-west1/models/${MODEL_ID}:predict \
--d "@${INPUT_DATA_FILE_NAME}")
+-d "@${INPUT_DATA_FILE_NAME}"
 
 #https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:predict \
 
-echo "Prediction = ${results}"
+#echo "Prediction = ${results}"
 
-echo $(curl \
+curl \
 -X GET \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 -H "Content-Type: application/json" \
-https://us-west2-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west2/endpoints/${ENDPOINT_ID}:explain)
+https://us-west2-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west2/endpoints/${ENDPOINT_ID}:explain
 
-echo "Explanation Results= ${results}"
+#echo "Explanation Results= ${results}"
 #echo https://us-west1-aiplatform.googleapis.com/v1/projects/msds434finalproject/locations/us-west1/endpoints/census_bureau_acs_endpoint:predict
 
 echo $(ls)
