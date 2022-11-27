@@ -177,7 +177,7 @@ export datum='{
   "commute_60_89_mins": 121.0, 
   "commute_90_more_mins": 11.0, 
   "households_retirement_income": 40.0, 
-  "do_date": 20062010, 
+  "do_date": "20062010", 
   "armed_forces": 10000, 
   "civilian_labor_force": 10000, 
   "employed_pop": 10000, 
