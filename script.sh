@@ -31,7 +31,7 @@ export MODEL_ID="3412268366105149440"
 echo "${ENDPOINT_ID} ${ENDPOINT_num} ${PROJECT_ID} ${MODEL_ID}"
 
 export datum='{
-  "geo_id": 361031584031, 
+  "geo_id": "361031584031", 
   "nonfamily_households": 98.0, 
   "family_households": 335.0, 
   "median_year_structure_built": 1978.0, 
