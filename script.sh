@@ -35,7 +35,7 @@ export results=$(curl \
 https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:predict \
 -d "@${INPUT_DATA_FILE}")
 
-echo "prediction = ${results}"
+echo "Prediction = ${results}"
 
 export results=$(curl \
 -X GET \
@@ -44,7 +44,7 @@ export results=$(curl \
 https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:explain)
 
 
-echo "results= ${results}"
+echo "Explanation Results= ${results}"
 #echo https://us-west1-aiplatform.googleapis.com/v1/projects/msds434finalproject/locations/us-west1/endpoints/census_bureau_acs_endpoint:predict
 
 echo $(ls)
