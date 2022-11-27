@@ -7,7 +7,7 @@ For a particular census block, what are predictors of a city for people that gen
 - The code was adapted from a fork of an example project published by google cloud.
 
 # Architecture Diagram
-![alt text](https://i.imgur.com/4tTdKmw.png)
+![alt text](https://i.imgur.com/QLCQAAz.png)
 
 # run-example-builddeploy
 Code example used in the official Cloud Build documentation
