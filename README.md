@@ -2,7 +2,8 @@ MSDS434 Final Project
 =====================
 For a particular census block, what are predictors of a city for people that generally make high income?
 
-This code is meant to connect to a vertex-ai regression model endpoint. It is meant to be run from within a gce cloud run project. The code was adapted from a fork of an example project published by google cloud.
+This code is meant to connect to a vertex-ai regression model endpoint. It is meant to be run from within a gce cloud run project. 
+The code was adapted from a fork of an example project published by google cloud.
 
 # run-example-builddeploy
 Code example used in the official Cloud Build documentation
