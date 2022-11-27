@@ -43,7 +43,7 @@ echo ${INPUT_DATA} > ${INPUT_DATA_FILE_NAME}
 
 echo "${INPUT_DATA}"
 
-export results=$(curl \
+echo $(curl \
 -X POST \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 -H "Content-Type: application/json" \
@@ -54,7 +54,7 @@ https://us-west1-aiplatform.googleapis.com/v1beta/projects/${PROJECT_ID}/locatio
 
 echo "Prediction = ${results}"
 
-export results=$(curl \
+echo $(curl \
 -X GET \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 -H "Content-Type: application/json" \
