@@ -17,11 +17,11 @@ https://cloud.google.com/cloud-build/docs/deploying-builds/deploy-cloud-run
 
 # API Listing
 
-Google Cloud Platform to establish a project
-Google BigQuery pulling in our dataset
-Google BigQuery querying to create model
-Google Vertex AI to perform ML predictions and creating endpoints
-Google Vertex API working with the Vertex AI endpoints to create monitoring logistics
-Google Source linked with Github
-Google Console Triggers activated on push to Github, buiild process will start
-Google Build API activated, app is deployed to Google Cloud Run
+- Google Cloud Platform to establish a project
+- Google BigQuery pulling in our dataset
+- Google BigQuery querying to create model
+- Google Vertex AI to perform ML predictions and creating endpoints
+- Google Vertex API working with the Vertex AI endpoints to create monitoring logistics
+- Google Source linked with Github
+- Google Console Triggers activated on push to Github, buiild process will start
+- Google Build API activated, app is deployed to Google Cloud Run
