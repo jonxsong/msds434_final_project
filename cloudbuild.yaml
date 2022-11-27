@@ -23,9 +23,9 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['run', 'deploy', 'myservice', '--image', 'us-central1-docker.pkg.dev/msds434finalproject/msds434finalproject/myimage', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
-# Deploy container image to Kubernetes
-- name: 'gcr.io/cloud-builders/gke-deploy'
-  args: ['run', '--filename', 'kubernetes.yaml', '--location', 'us-central1', '--cluster', 'nginx-1-cluster', '--image', 'us-central1-docker.pkg.dev/msds434finalproject/msds434finalproject/myimage']
+## Deploy container image to Kubernetes
+#- name: 'gcr.io/cloud-builders/gke-deploy'
+#  args: ['run', '--filename', 'kubernetes.yaml', '--location', 'us-central1', '--cluster', 'nginx-1-cluster', '--image', 'us-central1-docker.pkg.dev/msds434finalproject/msds434finalproject/myimage']
 images:
 - us-central1-docker.pkg.dev/msds434finalproject/msds434finalproject/myimage
 # [END cloudbuild_run_example_builddeploy]
