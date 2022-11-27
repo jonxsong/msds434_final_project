@@ -76,7 +76,6 @@ INPUT_DATA_FILE='{ "payload": { "row": { values: [
   "112.0",
   "81.0",
   "63.0",
-  null,
   "0.0",
   "0.0",
   "11.0",
@@ -169,24 +168,6 @@ INPUT_DATA_FILE='{ "payload": { "row": { values: [
   "11.0",
   "40.0",
   "20062010",
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null
 ]}}}'
 
 echo "${ENDPOINT_ID} ${PROJECT_ID} ${INPUT_DATA_FILE}"
