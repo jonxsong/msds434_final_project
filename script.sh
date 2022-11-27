@@ -198,7 +198,7 @@ echo "${PROJECT_ID} ${ENDPOINT_ID}"
 
 export MODEL_ID="7479018829620707328"
 
-export INPUT_DATA_FILE_NAME=input_data_file_name.txt
+export INPUT_DATA_FILE_NAME=input_data_file_name.json
 
 echo ${INPUT_DATA_FILE} > ${INPUT_DATA_FILE_NAME}
 
@@ -206,7 +206,7 @@ export results=$(curl \
 -X POST \
 -H "Authorization: Bearer $(gcloud auth print-access-token)" \
 -H "Content-Type: application/json" \
-https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/models/${MODEL_ID}:predict \
+https://us-west1-aiplatform.googleapis.com/v1beta/projects/${PROJECT_ID}/locations/us-west1/models/${MODEL_ID}:predict \
 -d "@${INPUT_DATA_FILE_NAME}")
 
 #https://us-west1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-west1/endpoints/${ENDPOINT_ID}:predict \
@@ -223,3 +223,5 @@ echo "Explanation Results= ${results}"
 #echo https://us-west1-aiplatform.googleapis.com/v1/projects/msds434finalproject/locations/us-west1/endpoints/census_bureau_acs_endpoint:predict
 
 echo $(ls)
+
+cat ${INPUT_DATA_FILE_NAME}
