@@ -32,8 +32,8 @@ echo "${ENDPOINT_ID} ${ENDPOINT_num} ${PROJECT_ID} ${MODEL_ID}"
 
 export INPUT_DATA='{
   "instances": [
-    { "income_75000_99999": "10000", "households": "10000", "owner_occupied_housing_units":"10000". "occupied_housing_units":"10000", "income_60000_74999":"10000" },
-    { "income_75000_99999": "15000", "households": "15000", "owner_occupied_housing_units":"15000". "occupied_housing_units":"15000", "income_60000_74999":"15000" },
+    { "income_75000_99999": "10000", "households": "10000", "owner_occupied_housing_units":"10000", "occupied_housing_units":"10000", "income_60000_74999":"10000" },
+    { "income_75000_99999": "15000", "households": "15000", "owner_occupied_housing_units":"15000", "occupied_housing_units":"15000", "income_60000_74999":"15000" },
   ]
 }'
 
