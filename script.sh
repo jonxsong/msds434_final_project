@@ -195,7 +195,7 @@ export datum='{
   "commute_35_44_mins": 10000, 
   "commute_60_more_mins": 10000, 
   "commute_less_10_mins": 10000, 
-  "commuters_16_over": 10000"
+  "commuters_16_over": 10000
 }'
 
 export INPUT_DATA="{
