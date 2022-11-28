@@ -8,7 +8,7 @@ For a particular census block, what are predictors of a city for people that gen
 - Dataset queried from https://console.cloud.google.com/marketplace/product/united-states-census-bureau/acs
 
 # Architecture Diagram
-![alt text](https://i.imgur.com/CszZfT2.png)
+![alt text](https://i.imgur.com/7MW9uRk.png)
 
 # run-example-builddeploy
 Code example used in the official Cloud Build documentation
