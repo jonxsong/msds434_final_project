@@ -1,6 +1,6 @@
-MSDS434 Final Project
+Predicting High Income House Owners for a City
 =====================
-From investigating US demographic data from various geographic resolutions, polled from the American Community Survey (ACS), I thought to ask for a particular census block, what are predictors of a city for people that generally make high income? Our target column for ML predictions was household owners with income higher than $200,000. Upon running the containerized Go web-app, users will see for themselves the predicted number of owners with such income for a particular city.
+  From investigating US demographic data from various geographic resolutions, polled from the American Community Survey (ACS), I thought to ask for a particular census block, what are predictors of a city for people that generally make high income? Our target column for ML predictions was household owners with income higher than $200,000. Upon running the containerized Go web-app, users will see for themselves the predicted number of owners with such income for a particular city.
 
 - This code is meant to connect to a vertex-ai regression model endpoint. 
 - It is meant to be run from within a gce cloud run project. 
